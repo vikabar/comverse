@@ -1,2 +1,2 @@
-# comverse
-Project for FED course - 2015
+# Comverse
+## Project for FED course - 2015
