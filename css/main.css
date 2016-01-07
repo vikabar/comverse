@@ -102,7 +102,6 @@ body
     margin: 0;
 }
 
-
 ul
 {
     list-style-type: none;
@@ -111,9 +110,40 @@ ul
 a
 {
     text-decoration: none;
-    color: pink; 
-
+    color: white; 
 }
+
+h1
+{
+    font-size: 33px;
+    font-weight: normal;
+} 
+
+h2
+{
+    font-size: 30px;
+    font-weight: normal;
+} 
+
+h3
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+} 
+
+h4
+{
+    font-size: 16px;
+    font-weight: 550;
+} 
+
+/*b 
+{
+    font-weight: 200px;
+}*/
+
+/*---------------------------------------------------*/
 
 header 
 {
@@ -145,42 +175,18 @@ header button span
 header button:before
 {
    content: url('../img/search_line_devider.png');
-   top: 6px;
    position: relative;
-   right: 38px;
+    right: 38px;
+   top: 6px;
 }
 
-/*b 
+header button:active, header button:focus
 {
-    font-weight: 200px;
-}*/
+    border: none;
+}
+
+/*---------------------------------------------------*/
  
-
-h1
-{
-    font-size: 33px;
-    font-weight: normal;
-} 
-
-h2
-{
-    font-size: 30px;
-    font-weight: normal;
-} 
-
-h3
-{
-    font-size: 20px;
-    font-weight: 600;
-    color: blue;
-} 
-
-h4
-{
-    font-size: 16px;
-    font-weight: 550;
-} 
-
 .slideShow
 {
     background-image: url('../img/slide-bg-complexity.jpg');
@@ -188,6 +194,125 @@ h4
     background-attachment: fixed;
     color: white;
 }
+
+.slideNoteContainer
+{
+    display: inline-block;
+}
+
+.slideSquare
+{
+    display: block;
+    border-radius: 1px;
+    background-color: rgb(245, 245, 245);
+    height: 10px;
+    width: 10px;
+    margin-bottom: 4px;
+}
+
+.slideSquare:first-child
+{
+    background-color: rgb(22, 138, 197);
+}
+
+.slideShowSlides
+{
+    border-radius: 5px;
+    width: 246px;
+    height: 165px;
+    padding-top: 0.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+    box-shadow: 2px 4px 15px  2px grey;
+    /*word-spacing: 2px;*/
+}
+
+.slideShowSlides a
+{
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.slideShowSlides p
+{
+    position: relative;
+    bottom: 6px;
+}
+
+
+.slideShowSlides a:before
+{
+    content: url('../img/link-icon-image.png');
+    position: relative;
+    top: 8px;
+    right: 5px;
+}
+
+.pink
+{
+    background-color: rgba(245, 35, 140, 0.9); 
+}
+
+.pink:hover
+{
+    background-color: rgb(245, 35, 140);
+}
+
+.green
+{
+    background-color: rgba(106, 196, 60, 0.9); 
+}
+
+.green:hover
+{
+    background-color: rgb(106, 196, 60);
+}
+
+.orange
+{
+    background-color: rgba(255, 117, 24, 0.9); 
+}
+
+.orange:hover
+{
+    background-color: rgb(255, 117, 24);
+}
+
+.btn
+{
+    display: block;
+    padding: 9px;
+    border-radius: 7px;
+    background-color: rgba(22, 138, 197, 0.85);
+    border: none;
+    width: 135px; 
+    font-size: 14px;
+}
+
+.btn:hover
+{
+    background-color: rgba(38, 155, 214, 0.85);
+}
+
+.btn:after 
+{
+    content: url('../img/btnArrow.png');
+    position: relative;
+    float: right;
+    top: 1px;
+}
+
+.btn:active , .btn:target
+{
+    border: hidden;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
