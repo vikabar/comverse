@@ -287,15 +287,19 @@ header button:active, header button:focus
     display: block;
     padding: 9px;
     border-radius: 7px;
-    background-color: rgba(22, 138, 197, 0.85);
+    background-color: rgba(17, 133, 192, 0.85);
     border: none;
-    width: 135px; 
     font-size: 14px;
+}
+
+.slideShow .btn 
+{
+    width: 135px; 
 }
 
 .btn:hover
 {
-    background-color: rgba(38, 155, 214, 0.85);
+    background-color: rgba(28, 145, 204, 0.85);
 }
 
 .btn:after 
@@ -311,8 +315,86 @@ header button:active, header button:focus
     border: hidden;
 }
 
+.solutions 
+{
+    background: url("../img/weDoBG.png"),      
+    radial-gradient(#59BEDB 0%, #3399CC 100%);
+    color: white;
+    text-align: center;
+}
 
+.BusinessStimulatingAnalytics
+{
+    content: url("../img/solution_icon_biz-analitics.png");
+}
 
+.BusinessStimulatingAnalytics:hover
+{
+    content: url("../img/solution_icon_biz-analitics_hover.png");
+}
+
+.DigitalCustomerExperience
+{
+    content: url("../img/solution_icon_diti-cx.png");
+}
+
+.DigitalCustomerExperience:hover
+{
+    content: url("../img/solution_icon_diti-cx_hover.png");
+}
+
+.SmartMonetization
+{
+    content: url("../img/solution_icon_smart-money.png");
+}
+
+.SmartMonetization:hover
+{
+    content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+.OptimazationAndEfficiency
+{
+    content: url("../img/solution_icon_optimize-efficnt.png");
+}
+
+.OptimazationAndEfficiency:hover
+{
+    content: url("../img/solution_icon_optimize-efficnt_hover.png");
+}
+
+.PersonalizedChoiceControl
+{
+    content: url("../img/solution_icon_personal.png");
+}
+
+.PersonalizedChoiceControl:hover
+{
+    content: url("../img/solution_icon_personal_hover.png");
+}
+
+.BusinessTransformation
+{
+    content: url("../img/solution_icon_biz-transform.png");
+}
+
+.BusinessTransformation:hover
+{
+    content: url("../img/solution_icon_biz-transform_hover.png");
+}
+
+.solutions .btn 
+{
+    width: 180px;
+}   
+
+.events
+{
+    background-image: url('../img/news-and-events-bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
