@@ -145,9 +145,80 @@ h4
 
 /*---------------------------------------------------*/
 
-header 
+header
 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #ffffff;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+header > *
+{
+    display: inline-block;
+}
+
+nav
+{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+nav > *
+{
+    display: inline-block;
+}
+
+nav ul
+{
+    margin-bottom: 0;
+}
+
+nav li
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    top: 4px;
+    cursor: pointer;
+}
+
+nav li:nth-of-type(1):after, nav li:nth-of-type(2):after, nav li:nth-of-type(3):after
+{
+    content: url('../img/search_line_devider.png');
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+
+nav div 
+{
+    position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav div > span:first-of-type:after
+{
+    content: url('../img/navCollapseArrowBottom.png');
+    position: relative;
+    bottom: 4px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+nav div > span:nth-of-type(2):before
+{
+    content: url('../img/search_line_devider.png');
+    position: relative;
+    top: 3px;
+    margin-left: 4px;
+    margin-right: 10px;
 }
 
 header input
@@ -157,33 +228,33 @@ header input
     line-height: 18px;
 }
 
-header button
+div span
 {
-    border: none;
-    background: none;
-    cursor: pointer;
+    margin-bottom: 30px;
 }
 
-header button span
+nav form
+{
+    margin-left: 25px;
+}
+
+nav a
 {
     content: url('../img/searchBtn.png');
     position: relative;
-    right: 35px;
+    right: 25px;
     top: 1px;
+    cursor: pointer;
 }
 
-header button:before
+nav form span
 {
-   content: url('../img/search_line_devider.png');
-   position: relative;
-    right: 38px;
-   top: 6px;
+    content: url('../img/search_line_devider.png');
+    position: relative;
+    right: 45px;
+    top: 36px;
 }
 
-header button:active, header button:focus
-{
-    border: none;
-}
 
 /*---------------------------------------------------*/
  
@@ -193,6 +264,13 @@ header button:active, header button:focus
     background-position: center;
     background-attachment: fixed;
     color: white;
+}
+
+.slideShow h1
+{
+    position: relative;
+    margin-top: 10px;
+    top: 40px;
 }
 
 .slideNoteContainer
@@ -326,6 +404,7 @@ header button:active, header button:focus
 .BusinessStimulatingAnalytics
 {
     content: url("../img/solution_icon_biz-analitics.png");
+    cursor: pointer;
 }
 
 .BusinessStimulatingAnalytics:hover
@@ -336,6 +415,7 @@ header button:active, header button:focus
 .DigitalCustomerExperience
 {
     content: url("../img/solution_icon_diti-cx.png");
+    cursor: pointer;
 }
 
 .DigitalCustomerExperience:hover
@@ -346,6 +426,7 @@ header button:active, header button:focus
 .SmartMonetization
 {
     content: url("../img/solution_icon_smart-money.png");
+    cursor: pointer;
 }
 
 .SmartMonetization:hover
@@ -356,6 +437,7 @@ header button:active, header button:focus
 .OptimazationAndEfficiency
 {
     content: url("../img/solution_icon_optimize-efficnt.png");
+    cursor: pointer;
 }
 
 .OptimazationAndEfficiency:hover
@@ -366,6 +448,7 @@ header button:active, header button:focus
 .PersonalizedChoiceControl
 {
     content: url("../img/solution_icon_personal.png");
+    cursor: pointer;
 }
 
 .PersonalizedChoiceControl:hover
@@ -376,6 +459,7 @@ header button:active, header button:focus
 .BusinessTransformation
 {
     content: url("../img/solution_icon_biz-transform.png");
+    cursor: pointer;
 }
 
 .BusinessTransformation:hover
