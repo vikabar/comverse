@@ -125,8 +125,11 @@ h1
 
 h2
 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 } 
 
 h3
@@ -276,13 +279,15 @@ nav form span
 .slideShow
 {
     background-image: url('../img/slide-bg-complexity.jpg');
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
     background-attachment: fixed;
     color: white;
-    background-repeat: no-repeat;
-    background-size: auto;
+    
+    background-size: cover;
     padding-bottom: 15px;
 }
+
 
 /*.slideShow h1
 {
@@ -456,7 +461,6 @@ nav form span
     background-attachment: fixed;
     color: white;
     padding-bottom: 40px;
-    
 }
 
 /*.solutions ul
@@ -560,15 +564,160 @@ nav form span
     position: relative;
     margin: auto;
 }
+
+/*------------------------------------*/
 .events
 {
     background-image: url('../img/news-and-events-bg.jpg');
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
-    background-repeat: no-repeat;
-    background-size: auto;
+    padding-bottom: 50px;
 }
+
+.events ul li
+{
+    display: inline-block;
+    width: 300px;
+    height: 190px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.events ul
+{
+    padding-left: 0;
+}
+
+.events h1
+{
+    position: relative;
+    text-align: center;
+}
+
+.event 
+{
+    position: relative;
+    background-color: rgba(240, 240, 240, 0.55);
+    border-radius: 3px;
+    height: 96px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.event:hover
+{
+    background-color: rgba(240, 240, 240, 0.90);
+}
+
+.date 
+{
+    background-color: #3399CC;
+    width: 50px;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+}
+
+.date hr
+{
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.date p:nth-of-type(1) 
+{
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.date p:nth-of-type(2) 
+{
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.eventText
+{
+    position: relative;
+    vertical-align: top;
+    color: black;
+    width: 220px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.eventText p
+{
+    position: relative;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.event > div
+{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.events a
+{
+    position: relative;
+    top: 15px;
+    left: 7px;
+}
+
+.events a:hover
+{
+    color: black;
+}
+
+.events li:nth-of-type(1) a:before
+{
+    content: url('../img/eventListIconNews.png');
+    position: relative;
+    right: 5px;
+}
+
+.events li:nth-of-type(2) a:before
+{
+    content: url('../img/eventListIconEvents.png');
+    position: relative;
+    right: 5px;
+}
+
+.events li:nth-of-type(3) a:before
+{
+    content: url('../img/eventListIconPress.png');
+    position: relative;
+    right: 5px;
+}
+
+.events li:nth-of-type(1) a:hover:before
+{
+    content: url('../img/eventListIconNews_hover.png');
+}
+
+.events li:nth-of-type(2) a:hover:before
+{
+    content: url('../img/eventListIconEvents_hover.png');
+}
+
+.events li:nth-of-type(3) a:hover:before
+{
+    content: url('../img/eventListIconPress_hover.png');
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
