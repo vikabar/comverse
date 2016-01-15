@@ -117,6 +117,10 @@ h1
 {
     font-size: 33px;
     font-weight: normal;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 10px;
+    top: 40px;
 } 
 
 h2
@@ -142,7 +146,7 @@ h4
 {
     margin-left: auto;
     margin-right: auto;
-    width: 910px;
+    width: 985px;
 }
 
 /*---------------------------------------------------*/
@@ -155,6 +159,7 @@ header
     background-color: #ffffff;
     width: 100%;
     vertical-align: bottom;
+    padding-bottom: 10px;
 }
 
 header > *
@@ -176,6 +181,7 @@ nav > *
 nav ul
 {
     margin-bottom: 0;
+    padding-left: 15px;
 }
 
 nav li
@@ -242,6 +248,11 @@ nav form
     margin-left: 25px;
 }
 
+nav input
+{
+    width: 140px;
+}
+
 nav a
 {
     content: url('../img/searchBtn.png');
@@ -273,13 +284,12 @@ nav form span
     padding-bottom: 15px;
 }
 
-.slideShow h1
+/*.slideShow h1
 {
     position: relative;
-    margin-top: 5px;
     padding-bottom: 10px;
     top: 40px;
-}
+}*/
 
 .slideShow ul:nth-of-type(1) li
 {
@@ -341,12 +351,12 @@ nav form span
 .slideShowSlides
 {
     border-radius: 5px;
-    width: 246px;
-    height: 165px;
+    width: 267px;
+    height: 172px;
     padding-top: 0.5px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 22px;
     transition: all 0.3s ease-out;
     box-shadow: 2px 4px 15px  2px grey;
     /*word-spacing: 2px;*/
@@ -377,6 +387,7 @@ nav form span
 .pink
 {
     background-color: rgba(245, 35, 140, 0.9); 
+    margin-right: 25px;
 }
 
 .pink:hover
@@ -387,6 +398,7 @@ nav form span
 .green
 {
     background-color: rgba(106, 196, 60, 0.9); 
+    margin-right: 25px;
 }
 
 .green:hover
@@ -412,6 +424,7 @@ nav form span
     background-color: rgba(17, 133, 192, 0.85);
     border: none;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .btn:hover
@@ -436,11 +449,21 @@ nav form span
 
 .solutions 
 {
-    background: url("../img/weDoBG.png"),      
-    radial-gradient(#59BEDB 0%, #3399CC 100%);
+    background: url("../img/weDoBG.png"), radial-gradient(#59BEDB 0%, #3399CC 100%);
     color: white;
     text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding-bottom: 40px;
+    
 }
+
+/*.solutions ul
+{
+    position: relative;
+    display: inline-block;
+}*/
 
 .BusinessStimulatingAnalytics
 {
@@ -510,15 +533,41 @@ nav form span
 
 .solutions .btn 
 {
+    position: relative;
+    margin: auto;
     width: 180px;
 }   
 
+.solutions ul > *
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.solutions ul li
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.solutions li
+{
+    width: 155px;
+}
+
+.solutions li div
+{
+    position: relative;
+    margin: auto;
+}
 .events
 {
     background-image: url('../img/news-and-events-bg.jpg');
     background-position: center;
     background-attachment: fixed;
     color: white;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 /* ==========================================================================
    Helper classes
