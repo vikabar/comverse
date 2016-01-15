@@ -138,10 +138,12 @@ h4
     font-weight: 550;
 } 
 
-/*b 
+.centerBlock
 {
-    font-weight: 200px;
-}*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 910px;
+}
 
 /*---------------------------------------------------*/
 
@@ -226,6 +228,8 @@ header input
     border: 1px solid #d6d8d2;
     border-radius: 6px;
     line-height: 18px;
+    /*overflow: none;*/
+    padding-right: 27px;
 }
 
 div span
@@ -264,28 +268,69 @@ nav form span
     background-position: center;
     background-attachment: fixed;
     color: white;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 15px;
 }
 
 .slideShow h1
 {
     position: relative;
-    margin-top: 10px;
+    margin-top: 5px;
+    padding-bottom: 10px;
     top: 40px;
 }
 
+.slideShow ul:nth-of-type(1) li
+{
+    position: relative;
+    display: inline-block;
+}
+
+.slideShow .btn 
+{
+    width: 135px; 
+}
+
+.slideShowTop
+{
+    width: 400px;
+    /*padding-left: 20px;*/
+}
+
+.slideShowTop p 
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.slideShowTop ul
+{
+    padding-left: 0;
+}
+
+.centerBlock>ul
+{
+    padding-left: 0;    
+}
+
+
 .slideNoteContainer
 {
+    position: relative;
     display: inline-block;
+    margin: auto;
 }
 
 .slideSquare
 {
     display: block;
-    border-radius: 1px;
+    border-radius: 3px;
     background-color: rgb(245, 245, 245);
     height: 10px;
     width: 10px;
     margin-bottom: 4px;
+    cursor: pointer;
 }
 
 .slideSquare:first-child
@@ -320,7 +365,6 @@ nav form span
     position: relative;
     bottom: 6px;
 }
-
 
 .slideShowSlides a:before
 {
@@ -370,11 +414,6 @@ nav form span
     font-size: 14px;
 }
 
-.slideShow .btn 
-{
-    width: 135px; 
-}
-
 .btn:hover
 {
     background-color: rgba(28, 145, 204, 0.85);
@@ -392,6 +431,8 @@ nav form span
 {
     border: hidden;
 }
+
+/*--------------------------------------------*/
 
 .solutions 
 {
