@@ -115,7 +115,7 @@ a
 
 h1
 {
-    font-size: 33px;
+    font-size: 35px;
     font-weight: normal;
     margin-top: 0;
     position: relative;
@@ -717,6 +717,122 @@ nav form span
     content: url('../img/eventListIconPress_hover.png');
 }
 
+/*------------------------------------*/
+
+.successStories
+{
+    background-color: #ECECEC;
+}
+.successStories .btn 
+{
+    position: relative;
+    margin: auto;
+    width: 180px;
+}   
+.successStories h1
+{
+    text-align: center;
+}
+
+.successStories ul >*
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.storyContainer
+{
+    height: 338px;
+    width: 338px;
+    /*border: 1px black solid;*/
+}
+
+.storyContainerThird
+{
+    height: 340px;
+    width: 210px;
+    /*border: 1px black solid;*/
+}
+
+
+.storyLittleBox
+{
+    height: 107px;
+    width: 107px;
+}
+
+.storyLittleBox:hover
+{
+    content: url('../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg');
+}
+
+.storyContainer ul>*
+{
+    display: inline-block;
+}
+
+.storyContainer ul
+{
+    padding-left: 0;
+    
+}
+
+.storyContainer:nth-of-type(1) ul
+{
+    position: relative;
+    top: 7px;
+}
+
+.VIDEOCON
+{
+    content: url('../img/VIDEOCON_w108px_X_h95px.jpg');
+}
+
+.Kyivstar
+{
+    content: url('../img/Kyivstarw_w108px_X_h95.jpg');
+}
+
+.play
+{
+    content: url('../img/play_w108px_X_h95px.jpg');
+}
+
+.storyQuoteContainer
+{
+    height: 220px;
+    width: 330px;
+    background-color: white;
+    margin: auto;
+}
+
+.topQuote
+{
+    position: relative;
+    /*display: inline-block;*/
+    vertical-align: top;
+    margin: auto;
+}
+
+.topQuote >*
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.topQuote p
+{
+    width: 200px;
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 11px;
+
+}
+
+.topQuote p:before
+{
+    content: url('../img/quote-grey.png');
+}
 
 /* ==========================================================================
    Helper classes
