@@ -721,14 +721,17 @@ nav form span
 
 .successStories
 {
-    background-color: #ECECEC;
+    background-color: #f7eee6;
+    padding-bottom: 40px;
 }
+
 .successStories .btn 
 {
     position: relative;
     margin: auto;
     width: 180px;
 }   
+
 .successStories h1
 {
     text-align: center;
@@ -739,47 +742,124 @@ nav form span
     display: inline-block;
     vertical-align: top;
 }
+
 .storyContainer
 {
-    height: 338px;
-    width: 338px;
-    /*border: 1px black solid;*/
+    height: 380px;
+    width: 360px;
 }
 
 .storyContainerThird
 {
-    height: 340px;
-    width: 210px;
-    /*border: 1px black solid;*/
+    height: 380px;
+    width: 236px;
 }
 
+.storyQuoteContainer
+{
+    height: 215px;
+    /*width: 360px;*/
+    background-color: white;
+    margin: auto;
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+
+.topQuote> *
+{
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    vertical-align: top;
+}
+
+.topQuote p 
+{
+    width: 200px;
+    font-size: 17px;
+}
+
+.topQuote
+{
+    /*width: 360;*/
+    height: 132;
+}
+
+.topQuote img
+{
+    border-radius: 4px;
+}
+
+.topQuote p:before
+{
+    content: url('../img/quote-grey.png');
+}
+
+.storyQuoteContainer hr
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.bottomQuote
+{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.name
+{
+    color: #3ea9e8;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title
+{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.bottomQuote img
+{
+    float: right;
+}
 
 .storyLittleBox
 {
-    height: 107px;
-    width: 107px;
+    height: 110px;
+    width: 110px;
+    border-radius: 2px;
 }
 
 .storyLittleBox:hover
 {
     content: url('../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg');
+    cursor: pointer;
 }
 
-.storyContainer ul>*
-{
-    display: inline-block;
-}
-
-.storyContainer ul
+.storyContainer ul, .storyContainerThird ul
 {
     padding-left: 0;
-    
+    margin-bottom: 16px;
 }
 
-.storyContainer:nth-of-type(1) ul
+.storyContainer li:nth-of-type(2)
 {
-    position: relative;
-    top: 7px;
+
+    margin-left: 11px;
+    margin-right: 10px;
+}
+
+.storyContainerThird li:nth-of-type(2)
+{
+    margin-left: 11px;
 }
 
 .VIDEOCON
@@ -797,42 +877,64 @@ nav form span
     content: url('../img/play_w108px_X_h95px.jpg');
 }
 
-.storyQuoteContainer
+/*
+
+
+.storyLittleBox
 {
-    height: 220px;
-    width: 330px;
-    background-color: white;
-    margin: auto;
+    height: 107px;
+    width: 107px;
 }
+
+
+
+.storyContainer ul>*
+{
+    display: inline-block;
+}
+
+
+
+.storyContainer:nth-of-type(1) ul
+{
+    position: relative;
+    top: 7px;
+}
+
+
+
+
 
 .topQuote
 {
     position: relative;
-    /*display: inline-block;*/
     vertical-align: top;
     margin: auto;
+    width: 340px;
+    border: 1px blue solid;
+    padding-left: 10px;
+    height: 120px;
 }
 
 .topQuote >*
 {
     display: inline-block;
     vertical-align: top;
+    top: 16px;
 }
 
 .topQuote p
 {
-    width: 200px;
+    width: 182px;
     font-size: 16px;
     margin-top: 7px;
     margin-bottom: 7px;
-    margin-left: 11px;
+    margin-left: 25px;
+    border: green 1px solid;
 
 }
 
-.topQuote p:before
-{
-    content: url('../img/quote-grey.png');
-}
+*/
 
 /* ==========================================================================
    Helper classes
