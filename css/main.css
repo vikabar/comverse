@@ -145,12 +145,22 @@ h4
     font-weight: 550;
 } 
 
+input[type=checkbox]
+{
+    display: none;
+}
+
 .centerBlock
 {
     margin-left: auto;
     margin-right: auto;
     width: 985px;
     border: 1px white solid;
+}
+
+.hamburger-nav ~ ul, .mobile-search-input
+{
+    display: none;
 }
 
 /*---------------------------------------------------*/
@@ -164,6 +174,7 @@ header
     width: 100%;
     vertical-align: bottom;
     padding-bottom: 10px;
+    color: black;
 }
 
 header > *
@@ -171,24 +182,71 @@ header > *
     display: inline-block;
 }
 
-nav
+header a
+{
+    color: black;
+}
+
+header img:nth-of-type(2)
+{
+    display: none;
+}
+
+header img:first-of-type
+{
+    display: inline-block;
+}
+
+.desktop-nav
 {
     display: inline-block;
     vertical-align: bottom;
 }
 
-nav > *
+.mobile-nav
+{
+    display: none;
+}
+
+.desktop-nav > *
 {
     display: inline-block;
 }
 
-nav ul
+.desktop-nav ul
 {
     margin-bottom: 0;
     padding-left: 15px;
 }
 
-nav li
+.desktop-nav ul ul
+{
+    display: none;
+    position: absolute;
+    padding-left: 0;
+    
+}
+
+.desktop-nav ul > li:hover > ul, .desktop-nav ul > li:focus > ul  
+{
+  display: block;
+  width: 100%;
+  color: blue;
+  text-decoration: underline;
+}
+
+.desktop-nav ul > li:hover li
+{
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin:0;
+    border: 1px solid grey;
+    border-top: none;
+    z-index: 10;
+}
+
+.desktop-nav li
 {
     position: relative;
     display: inline-block;
@@ -199,7 +257,7 @@ nav li
     cursor: pointer;
 }
 
-nav li:nth-of-type(1):after, nav li:nth-of-type(2):after, nav li:nth-of-type(3):after
+.desktop-nav > ul > li:nth-of-type(1):after, .desktop-nav > ul > li:nth-of-type(2):after, .desktop-nav > ul > li:nth-of-type(3):after
 {
     content: url('../img/search_line_devider.png');
     position: relative;
@@ -207,7 +265,7 @@ nav li:nth-of-type(1):after, nav li:nth-of-type(2):after, nav li:nth-of-type(3):
     left: 10px;
 }
 
-nav div 
+.desktop-nav div 
 {
     position: relative;
     text-align: center;
@@ -215,7 +273,7 @@ nav div
     margin-left: auto;
 }
 
-nav div > span:first-of-type:after
+.desktop-nav div > span:first-of-type:after
 {
     content: url('../img/navCollapseArrowBottom.png');
     position: relative;
@@ -224,7 +282,7 @@ nav div > span:first-of-type:after
     margin-right: 10px;
 }
 
-nav div > span:nth-of-type(2):before
+.desktop-nav div > span:nth-of-type(2):before
 {
     content: url('../img/search_line_devider.png');
     position: relative;
@@ -247,17 +305,17 @@ div span
     margin-bottom: 30px;
 }
 
-nav form
+.desktop-nav form
 {
     margin-left: 25px;
 }
 
-nav input
+.desktop-nav input
 {
     width: 140px;
 }
 
-nav a
+.desktop-nav form a
 {
     content: url('../img/searchBtn.png');
     position: relative;
@@ -266,13 +324,15 @@ nav a
     cursor: pointer;
 }
 
-nav form span
+.desktop-nav form span
 {
     content: url('../img/search_line_devider.png');
     position: relative;
     right: 45px;
     top: 36px;
 }
+
+
 
 
 /*---------------------------------------------------*/
@@ -287,14 +347,6 @@ nav form span
     background-size: cover;
     padding-bottom: 15px;
 }
-
-
-/*.slideShow h1
-{
-    position: relative;
-    padding-bottom: 10px;
-    top: 40px;
-}*/
 
 .slideShow ul:nth-of-type(1) li
 {
@@ -908,6 +960,7 @@ footer .centerBlock ul > *
 
 @media all and (max-width: 770px)
 {
+
      .slideShow
     {
         background-image: none;
@@ -916,13 +969,13 @@ footer .centerBlock ul > *
     .slideShowTop
     {
         background-image: url('../img/slide-bg-complexity.jpg');
-        background-size: 98% ;
+        background-size: 220%;
         background-repeat: no-repeat;
         background-position: bottom;
         color: white;
         margin-bottom: 10px;
         width: 100%;
-
+        height: 100%;
     }
 
     .slideShow  ul
@@ -933,27 +986,40 @@ footer .centerBlock ul > *
 
     .centerBlock
     {
-        width: 98%;
+        width: 96%;
     }
 
     .slideShowSlides
     {
-        width: 98%;
-        max-width: 98%;
+        width: 96%;
+        max-width: 96%;
         position: relative;
         margin-bottom: 10px;
         border-radius: 0;
         margin-right: 0;
         margin-left: 0;
+        left: -10px;
     }
+
+
 
     .slideNoteContainer
     {
-        width: 97%;
+        width: 96%;
+    }
+
+    .slideShowSlides:before
+    {
+        position: relative;
+        content: url('../img/promotion-item-arrow.png');
+        float: right; 
+        top: 72px;   
+        left: 10px;
     }
 
     .slideSquare
     {
+        margin-top: 20px;
         height: 38px;
         width: 38px;
         font-size: 16px;
@@ -973,6 +1039,125 @@ footer .centerBlock ul > *
     .slideSquare:first-child
     {
         color: white;
+    }
+
+    .desktop-nav
+    {
+        display: none;
+    }
+
+    .mobile-nav
+    {
+        display: block;
+    }
+
+    header img:first-of-type
+    {
+        display: none;
+    }
+
+    header img:nth-of-type(2)
+    {
+        display: block;
+    }
+
+    .mobile-nav-btn
+    {
+        padding: 10px;
+        border-radius: 2px;
+        border: grey 1px solid;
+        cursor: pointer;
+        height: 23px;
+        width: 23px;
+        background-color: rgb(240, 240, 240);
+        margin: 5px;
+    }
+
+    .mobile-nav-btn:hover
+    {
+        background-color: rgb(225, 225, 225);
+    }
+
+    .mobile-nav-btn:active
+    {
+        box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-nav-btn:first-of-type
+    {
+        content: url('../img/hamburger-icon.png');
+        position: absolute;
+        top: 0;    
+        left: 0;
+    }
+    .mobile-nav-btn:nth-of-type(2)
+    {
+        content: url('../img/searchBtnMobile.png');
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .hamburger-nav:checked ~ ul
+    {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding-left: 0;
+        z-index: 10;
+        position: absolute;
+    }
+
+    .search-mobile-nav:checked ~ .mobile-search-input
+    {
+        display: block;
+        z-index: 15;
+        position: absolute;
+    }
+    
+    .mobile-nav li
+    {
+        background-color: rgb(245, 245, 245);
+        padding: 5px;
+        padding-left: 10px;
+        border-bottom: grey solid 1px;
+        cursor: pointer;
+    }
+
+    .mobile-nav li:hover
+    {
+        background-color: rgb(230, 230, 230);
+    }
+
+    .mobile-nav li:nth-of-type(4)
+    {
+        border-bottom: none;
+    }
+
+
+    .mobile-nav li a
+    {
+        position: relative;
+        left: 15px;
+        width: 100%;
+    }
+
+    .hamburger-nav:checked ~ ul li:before
+    {
+        content: url('../img/navCollapseArrowRight.png');
+        position: relative;
+        bottom: 2px;
+    }
+
+    .mobile-search-input
+    {
+        width: 97%;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 3px;
+        margin-top: 16px;
     }
 }
 /* ==========================================================================
