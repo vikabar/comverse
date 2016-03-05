@@ -150,6 +150,7 @@ h4
     margin-left: auto;
     margin-right: auto;
     width: 985px;
+    border: 1px white solid;
 }
 
 /*---------------------------------------------------*/
@@ -283,7 +284,6 @@ nav form span
     background-position: bottom;
     background-attachment: fixed;
     color: white;
-    
     background-size: cover;
     padding-bottom: 15px;
 }
@@ -348,6 +348,11 @@ nav form span
     cursor: pointer;
 }
 
+.slideSquare span
+{
+    display: none;
+}
+
 .slideSquare:first-child
 {
     background-color: rgb(22, 138, 197);
@@ -364,6 +369,7 @@ nav form span
     font-size: 22px;
     transition: all 0.3s ease-out;
     box-shadow: 2px 4px 15px  2px grey;
+    cursor: pointer;
     /*word-spacing: 2px;*/
 }
 
@@ -877,65 +883,98 @@ nav form span
     content: url('../img/play_w108px_X_h95px.jpg');
 }
 
-/*
-
-
-.storyLittleBox
+footer
 {
-    height: 107px;
-    width: 107px;
+    background-image: url("../img/weDoBG.png");
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    color: white;
 }
 
-
-
-.storyContainer ul>*
-{
-    display: inline-block;
-}
-
-
-
-.storyContainer:nth-of-type(1) ul
-{
-    position: relative;
-    top: 7px;
-}
-
-
-
-
-
-.topQuote
-{
-    position: relative;
-    vertical-align: top;
-    margin: auto;
-    width: 340px;
-    border: 1px blue solid;
-    padding-left: 10px;
-    height: 120px;
-}
-
-.topQuote >*
+footer .centerBlock ul > *
 {
     display: inline-block;
-    vertical-align: top;
-    top: 16px;
 }
 
-.topQuote p
+/*-------------media queries-------------*/
+@media all and (max-width: 1000px)
 {
-    width: 182px;
-    font-size: 16px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 25px;
-    border: green 1px solid;
-
+    .centerBlock
+    {
+    }
 }
 
-*/
+@media all and (max-width: 770px)
+{
+     .slideShow
+    {
+        background-image: none;
+    }
 
+    .slideShowTop
+    {
+        background-image: url('../img/slide-bg-complexity.jpg');
+        background-size: 98% ;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        color: white;
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    .slideShow  ul
+    {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .centerBlock
+    {
+        width: 98%;
+    }
+
+    .slideShowSlides
+    {
+        width: 98%;
+        max-width: 98%;
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .slideNoteContainer
+    {
+        width: 97%;
+    }
+
+    .slideSquare
+    {
+        height: 38px;
+        width: 38px;
+        font-size: 16px;
+        color: grey;
+        margin-right: 8px;
+        text-align: center;
+    }
+
+    .slideSquare span
+    {
+        display: block;
+        position: relative;
+        top: 8px;
+        margin-bottom: 0;
+    }
+
+    .slideSquare:first-child
+    {
+        color: white;
+    }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
