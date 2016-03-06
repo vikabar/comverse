@@ -100,6 +100,7 @@ body
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 ul
@@ -155,7 +156,6 @@ input[type=checkbox]
     margin-left: auto;
     margin-right: auto;
     width: 985px;
-    border: 1px white solid;
 }
 
 .hamburger-nav ~ ul, .mobile-search-input
@@ -405,9 +405,16 @@ div span
     display: none;
 }
 
-.slideSquare:first-child
+/*.slideSquare:first-child
 {
     background-color: rgb(22, 138, 197);
+}*/
+
+.slideSquare:hover
+{
+    color: white;
+    background-color: rgb(22, 138, 197);
+
 }
 
 .slideShowSlides
@@ -422,13 +429,14 @@ div span
     transition: all 0.3s ease-out;
     box-shadow: 2px 4px 15px  2px grey;
     cursor: pointer;
+    display: block;
     /*word-spacing: 2px;*/
 }
 
 .slideShowSlides a
 {
-    position: relative;
     top: 3px;
+    position: relative;
     font-size: 14px;
     font-weight: 600;
 }
@@ -521,74 +529,62 @@ div span
     padding-bottom: 40px;
 }
 
-/*.solutions ul
-{
-    position: relative;
-    display: inline-block;
-}*/
-
-.BusinessStimulatingAnalytics
+.BusinessStimulatingAnalytics div
 {
     content: url("../img/solution_icon_biz-analitics.png");
-    cursor: pointer;
 }
 
-.BusinessStimulatingAnalytics:hover
+.BusinessStimulatingAnalytics:hover div
 {
     content: url("../img/solution_icon_biz-analitics_hover.png");
 }
 
-.DigitalCustomerExperience
+.DigitalCustomerExperience div
 {
     content: url("../img/solution_icon_diti-cx.png");
-    cursor: pointer;
 }
 
-.DigitalCustomerExperience:hover
+.DigitalCustomerExperience:hover div
 {
     content: url("../img/solution_icon_diti-cx_hover.png");
 }
 
-.SmartMonetization
+.SmartMonetization div
 {
     content: url("../img/solution_icon_smart-money.png");
-    cursor: pointer;
 }
 
-.SmartMonetization:hover
+.SmartMonetization:hover div
 {
     content: url("../img/solution_icon_smart-money_hover.png");
 }
 
-.OptimazationAndEfficiency
+.OptimazationAndEfficiency div
 {
     content: url("../img/solution_icon_optimize-efficnt.png");
-    cursor: pointer;
 }
 
-.OptimazationAndEfficiency:hover
+.OptimazationAndEfficiency:hover div
 {
     content: url("../img/solution_icon_optimize-efficnt_hover.png");
 }
 
-.PersonalizedChoiceControl
+.PersonalizedChoiceControl div
 {
     content: url("../img/solution_icon_personal.png");
-    cursor: pointer;
 }
 
-.PersonalizedChoiceControl:hover
+.PersonalizedChoiceControl:hover div
 {
     content: url("../img/solution_icon_personal_hover.png");
 }
 
-.BusinessTransformation
+.BusinessTransformation div
 {
     content: url("../img/solution_icon_biz-transform.png");
-    cursor: pointer;
 }
 
-.BusinessTransformation:hover
+.BusinessTransformation:hover div
 {
     content: url("../img/solution_icon_biz-transform_hover.png");
 }
@@ -600,21 +596,16 @@ div span
     width: 180px;
 }   
 
-.solutions ul > *
-{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.solutions ul li
-{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
 .solutions li
 {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
     width: 155px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
 .solutions li div
@@ -953,9 +944,7 @@ footer .centerBlock ul > *
 /*-------------media queries-------------*/
 @media all and (max-width: 1000px)
 {
-    .centerBlock
-    {
-    }
+    
 }
 
 @media all and (max-width: 770px)
@@ -964,12 +953,19 @@ footer .centerBlock ul > *
      .slideShow
     {
         background-image: none;
+        padding-bottom: 0;
+    }
+
+    h1
+    {
+        top: 0;
+        margin-bottom: 0;
     }
 
     .slideShowTop
     {
         background-image: url('../img/slide-bg-complexity.jpg');
-        background-size: 220%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
         color: white;
@@ -978,21 +974,29 @@ footer .centerBlock ul > *
         height: 100%;
     }
 
-    .slideShow  ul
+    .slideShow a
+    {
+        margin-bottom: 120px;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+
+    .slideShow ul
     {
         margin-bottom: 0;
         margin-top: 0;
+        margin-left: 10px;
     }
 
     .centerBlock
     {
-        width: 96%;
+        width: 99%;
     }
 
     .slideShowSlides
     {
-        width: 96%;
-        max-width: 96%;
+        width: 97%;
+        max-width: 97%;
         position: relative;
         margin-bottom: 10px;
         border-radius: 0;
@@ -1005,7 +1009,7 @@ footer .centerBlock ul > *
 
     .slideNoteContainer
     {
-        width: 96%;
+        width: 100%;
     }
 
     .slideShowSlides:before
@@ -1014,7 +1018,7 @@ footer .centerBlock ul > *
         content: url('../img/promotion-item-arrow.png');
         float: right; 
         top: 72px;   
-        left: 10px;
+        left: 0;
     }
 
     .slideSquare
@@ -1036,10 +1040,10 @@ footer .centerBlock ul > *
         margin-bottom: 0;
     }
 
-    .slideSquare:first-child
+    /*.slideSquare:first-child
     {
         color: white;
-    }
+    }*/
 
     .desktop-nav
     {
@@ -1158,6 +1162,60 @@ footer .centerBlock ul > *
         padding-right: 4px;
         border-radius: 3px;
         margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile-blue-header
+    {
+        background: url("../img/weDoBG.png"), linear-gradient(rgba(59, 170, 199, 0.9) 0%, rgba(31, 133, 184, 0.9) 100%);
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .solutions
+    {
+        padding-bottom: 10px;
+    }
+
+    .solutions li
+    {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 32%;
+    }
+
+
+    .solutions ul
+    {
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .solutions p
+    {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .solutions .btn
+    {
+        display: none;
+    }
+
+    .events ul
+    {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .events li
+    {
+        display: block;
     }
 }
 /* ==========================================================================
