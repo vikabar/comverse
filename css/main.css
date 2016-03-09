@@ -163,7 +163,7 @@ input[type=checkbox]
     display: none;
 }
 
-/*---------------------------------------------------*/
+/*-------------------header----------------------*/
 
 header
 {
@@ -213,6 +213,16 @@ header img:first-of-type
     display: inline-block;
 }
 
+.desktop-nav div span
+{
+    cursor: pointer;
+}
+
+.desktop-nav div span:hover
+{
+    text-decoration: underline;
+}
+
 .desktop-nav ul
 {
     margin-bottom: 0;
@@ -224,7 +234,21 @@ header img:first-of-type
     display: none;
     position: absolute;
     padding-left: 0;
-    
+}
+
+.desktop-nav ul ul li:hover a
+{
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+}
+
+.desktop-nav > ul > li:hover
+{
+    color: blue;
+    text-decoration: underline;
 }
 
 .desktop-nav ul > li:hover > ul, .desktop-nav ul > li:focus > ul  
@@ -335,7 +359,7 @@ div span
 
 
 
-/*---------------------------------------------------*/
+/*---------------------color slides-----------------------*/
  
 .slideShow
 {
@@ -362,7 +386,6 @@ div span
 .slideShowTop
 {
     width: 400px;
-    /*padding-left: 20px;*/
 }
 
 .slideShowTop p 
@@ -405,11 +428,6 @@ div span
     display: none;
 }
 
-/*.slideSquare:first-child
-{
-    background-color: rgb(22, 138, 197);
-}*/
-
 .slideSquare:hover
 {
     color: white;
@@ -430,7 +448,6 @@ div span
     box-shadow: 2px 4px 15px  2px grey;
     cursor: pointer;
     display: block;
-    /*word-spacing: 2px;*/
 }
 
 .slideShowSlides a
@@ -516,7 +533,7 @@ div span
     border: hidden;
 }
 
-/*--------------------------------------------*/
+/*--------------solutions------------------------------*/
 
 .solutions 
 {
@@ -614,7 +631,7 @@ div span
     margin: auto;
 }
 
-/*------------------------------------*/
+/*------------------events------------------*/
 .events
 {
     background-image: url('../img/news-and-events-bg.jpg');
@@ -766,7 +783,7 @@ div span
     content: url('../img/eventListIconPress_hover.png');
 }
 
-/*------------------------------------*/
+/*------------------success stories------------------*/
 
 .successStories
 {
@@ -807,7 +824,6 @@ div span
 .storyQuoteContainer
 {
     height: 215px;
-    /*width: 360px;*/
     background-color: white;
     margin: auto;
     position: relative;
@@ -832,7 +848,6 @@ div span
 
 .topQuote
 {
-    /*width: 360;*/
     height: 132;
 }
 
@@ -936,6 +951,7 @@ div span
     display: none;
 }
 
+/*--------footer-------*/
 .mobile-footer
 {
     display: none;
@@ -961,9 +977,37 @@ footer ul
     margin-top: 0;
 }
 
-footer .centerBlock ul > *
+.desktop-footer .centerBlock > ul > *
 {
+    position: relative;
     display: inline-block;
+    vertical-align: top;
+}
+
+.footer-col
+{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.footer-col ul
+{
+    padding-left: 0;
+}
+
+.footer-col li
+{
+    cursor: pointer;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.footer-col li:hover
+{
+    text-decoration: underline;
 }
 
 .yt-icon
@@ -1001,6 +1045,7 @@ footer .centerBlock ul > *
     
 }
 
+/*mobile*/
 @media all and (max-width: 770px)
 {
 
