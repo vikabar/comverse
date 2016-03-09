@@ -626,7 +626,7 @@ div span
     padding-bottom: 50px;
 }
 
-.events ul li
+.events li
 {
     display: inline-block;
     width: 300px;
@@ -926,14 +926,39 @@ div span
     content: url('../img/play_w108px_X_h95px.jpg');
 }
 
+.comp-logos:first-of-type
+{
+    display: block;
+}
+
+.comp-logos:nth-of-type(2)
+{
+    display: none;
+}
+
+.mobile-footer
+{
+    display: none;
+}
+
+.desktop-footer
+{
+    display: block;
+}
+
 footer
 {
     background-image: url("../img/weDoBG.png");
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     background-position: center;
     background-attachment: fixed;
     background-repeat: repeat;
     color: white;
+}
+
+footer ul
+{
+    margin-top: 0;
 }
 
 footer .centerBlock ul > *
@@ -941,6 +966,35 @@ footer .centerBlock ul > *
     display: inline-block;
 }
 
+.yt-icon
+{
+    content: url("../img/socialMenuIcon-youtube.png");
+}
+
+.yt-icon:hover
+{
+    content: url("../img/socialMenuIcon-youtube_hover.png");
+}
+
+.twitter-icon
+{
+    content: url("../img/socialMenuIcon-twitter.png");
+}
+
+.twitter-icon:hover
+{
+    content: url("../img/socialMenuIcon-twitter_hover.png");
+}
+
+.li-icon
+{
+    content: url("../img/socialMenuIcon-linkdin.png");
+}
+
+.li-icon:hover
+{
+    content: url("../img/socialMenuIcon-linkdin_hover.png");
+}
 /*-------------media queries-------------*/
 @media all and (max-width: 1000px)
 {
@@ -958,7 +1012,7 @@ footer .centerBlock ul > *
 
     h1
     {
-        top: 0;
+        top: 15px;
         margin-bottom: 0;
     }
 
@@ -1040,10 +1094,10 @@ footer .centerBlock ul > *
         margin-bottom: 0;
     }
 
-    /*.slideSquare:first-child
+    .mobile-blue-header p:first-of-type
     {
-        color: white;
-    }*/
+        margin-top: 35px;
+    }
 
     .desktop-nav
     {
@@ -1216,7 +1270,131 @@ footer .centerBlock ul > *
     .events li
     {
         display: block;
+        width: 100%;
     }
+
+    .event
+    {
+        position: relative;
+        width: 100%;
+    }
+
+    .eventText
+    {
+        width: 65%;
+    }
+
+    .events
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .comp-logos:first-of-type
+    {
+        display: none;
+    }
+
+    .comp-logos:nth-of-type(2)
+    {
+        display: block;
+    }
+
+    .successStories .storyContainerThird
+    {
+        display: none;
+    }
+
+    .storyContainer
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .successStories ul 
+    {
+        text-align: center;
+    }
+
+    .mobile-footer
+    {
+        display: block;
+    }
+
+    .desktop-footer
+    {
+        display: none;
+    }
+
+    .mobile-footer li
+    {
+        border-bottom: black solid 1px;
+        vertical-align: middle;
+        padding: 5px;
+        padding-left: 20px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .mobile-footer ul
+    {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .mobile-footer li:hover
+    {
+        background-color: rgb(32, 32, 32);
+    }
+
+    .mobile-footer > a
+    {
+        position: relative;
+        content: url("../img/back_top.png");
+        float: right;
+        bottom: 30px;
+        margin-right: 20px;
+    }
+
+    .twitter-icon, .yt-icon, .li-icon
+    {
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+    .mobile-footer select
+    {
+
+        background-color: rgba(100, 100, 100, 0.5);
+        border-radius: 2px;
+        border: none;
+        color: white;
+        height: 24px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .mobile-footer form
+    {
+        position: relative;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .mobile-footer > span
+    {
+        position: relative;
+        display: block;
+        background-color: white;
+        color: black;
+        width: 100%;
+        height: 100%;
+        border-bottom: none;
+        font-size: 14px;
+        text-align: center;
+    }
+
 }
 /* ==========================================================================
    Helper classes
